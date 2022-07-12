@@ -8,16 +8,19 @@
 body {
   background-repeat: no-repeat;
   height: 100vh;    
-  background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: rgb(103,141,255);
+background: linear-gradient(90deg, rgba(103,141,255,1) 0%, rgba(91,105,241,1) 48%, rgba(87,110,255,1) 100%);
 }
-h1 {
-  padding-top: 1em;
-  text-align: center;
-  text-shadow: 2px 2px 7px #000;
-  font-size: 70px;
+.titulo{
+  top: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #28272F;
+  height: 200px;
+  font-size: 2em;
+}
 
-}
 ::-webkit-scrollbar {
   display: none;
 }

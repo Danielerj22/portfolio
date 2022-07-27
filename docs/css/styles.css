@@ -21,6 +21,10 @@ background: linear-gradient(90deg, rgba(103,141,255,1) 0%, rgba(91,105,241,1) 48
   font-size: 2em;
 }
 
+img {
+  width: 200px;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

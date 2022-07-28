@@ -18,11 +18,21 @@ background: linear-gradient(90deg, rgba(103,141,255,1) 0%, rgba(91,105,241,1) 48
   align-items: center;
   background-color: #28272F;
   height: 200px;
-  font-size: 2em;
+  font-size: 1.4rem;
 }
 
 img {
   width: 200px;
+}
+
+.caja {
+  height: 300px;
+  position: relative;
+  top: 70px;
+  background: #28272F;
+  margin: auto;
+  font-size: 1.5rem;
+
 }
 
 ::-webkit-scrollbar {

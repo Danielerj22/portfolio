@@ -4,26 +4,45 @@
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
+  box-sizing: border-box;
 }
 body {
   background-repeat: no-repeat;
   height: 100vh;    
   background: rgb(103,141,255);
-background: linear-gradient(90deg, rgba(103,141,255,1) 0%, rgba(91,105,241,1) 48%, rgba(87,110,255,1) 100%);
+  background: linear-gradient(90deg, rgba(103,141,255,1) 0%, rgba(91,105,241,1) 48%, rgba(87,110,255,1) 100%);
 }
-.titulo{
-  top: 500px;
+
+/* ----- ----- Jumbotron ----- ----- */
+
+.jumbotron {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #28272F;
-  height: 200px;
   font-size: 1.4rem;
+  height: 200px;
+}
+.jumbotron__img {
+  height: 100%;
+}
+.jumbotron__img img {
+  height: 100%;
+  padding: .6em;
+}
+.jumbotron__img--animation {
+  object-fit: cover;
+  animation-name: downUp;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate-reverse;
+}
+.jumbotron__title {
+  font-size: 1.8em;
 }
 
-img {
-  width: 200px;
-}
+/* ----- ----- Others Styles ----- ----- */
 
 .caja {
   height: 300px;
@@ -35,6 +54,19 @@ img {
 
 }
 
+/* ----- ----- Scroll Styles ----- ----- */
+
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* ----- ----- Animations ----- ----- */
+
+@keyframes downUp {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

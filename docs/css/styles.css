@@ -65,6 +65,7 @@ section.section {
 .containerText__button {
   outline: none;
   border: none;
+  cursor: pointer;
   background-color: #5b69f1;
   color: #28272F;
   font-size: 1.2em;
